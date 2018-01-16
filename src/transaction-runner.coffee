@@ -254,7 +254,8 @@ class TransactionRunner
         # this will not be supported in future hook function will be called with
         # data synchronously and callback will be called immediatelly and not
         # passed as a second argument
-        hook callback
+        hook data
+        callback()
 
       else if hook.length is 2
         # async api
